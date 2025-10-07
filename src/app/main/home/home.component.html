@@ -1,0 +1,90 @@
+<section
+  id="home"
+  class="flex flex-col-reverse lg:flex-row items-center justify-between min-h-screen px-6 lg:px-20 py-16 bg-gray-900 text-gray-100"
+>
+  <!-- Left Side -->
+  <div class="text-center lg:text-left max-w-xxl space-y-5">
+    <h1 class="text-5xl sm:text-6xl font-bold">
+      Hi, I’m <span class="text-white">Sonic Maharjan</span>
+    </h1>
+    <h2
+      class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent"
+    >
+      Full stack developer
+    </h2>
+    <p class="text-gray-300 leading-relaxed">
+      Designing and developing modern, responsive web solutions using Angular
+      and .NET, delivering seamless user experiences
+    </p>
+
+    <!-- Buttons & Socials -->
+    <div
+      class="flex flex-col sm:flex-row items-center sm:items-start sm:space-x-6 space-y-4 sm:space-y-0 pt-4"
+    >
+      <button
+        class="px-6 py-3 btn-gradient flex items-center gap-2"
+        (click)="downloadCV()"
+      >
+        <span>Download Resume</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2m-4-4l-4 4m0 0l-4-4m4 4V4"
+          />
+        </svg>
+      </button>
+
+      <div class="flex items-center gap-6">
+        <a
+          href="https://github.com/SonicMhzrn"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="reflect pt-2 text-gray-400 hover:text-white transition transform hover:scale-110"
+        >
+          <i class="fa-brands fa-github text-4xl"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/sonic-maharjan-4b9105284/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="reflect pt-2 text-gray-400 hover:text-white transition transform hover:scale-110"
+        >
+          <i class="fa-brands fa-linkedin text-4xl"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Side -->
+  <div class="relative mb-10 lg:mb-0">
+    <div class="rounded-full bg-gradient-to-r from-purple-600 to-pink-500 p-2">
+      <img
+        src="profile.jpg"
+        alt="Sonic Maharjan"
+        class="rounded-full w-96 h-96 object-cover"
+      />
+    </div>
+
+    <!-- Floating Tech Icons -->
+    <!-- <div class="absolute top-5 -left-5 bg-[#1a0b2e] p-3 rounded-full shadow-lg">
+        <img src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" alt="NodeJS" class="w-8 h-8">
+      </div>
+      <div class="absolute top-0 right-5 bg-[#1a0b2e] p-3 rounded-full shadow-lg">
+        <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="HTML5" class="w-8 h-8">
+      </div>
+      <div class="absolute bottom-5 -right-5 bg-[#1a0b2e] p-3 rounded-full shadow-lg">
+        <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="React" class="w-8 h-8">
+      </div> -->
+  </div>
+
+  
+</section>

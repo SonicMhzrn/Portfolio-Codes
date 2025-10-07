@@ -1,0 +1,39 @@
+@import "tailwindcss";
+/* body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(to top, #0250c5 0%, #d43f8d 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+} */
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  /* Dark gradient background */
+  background: linear-gradient(to top, #0f172a 0%, #1e293b 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #f8fafc; /* light text for contrast */
+}
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent;
+  } 
+
+}
+
+@layer components {
+  .btn-gradient {
+    @apply bg-gradient-to-r from-purple-600 to-pink-500 text-white  rounded-full shadow-lg hover:shadow-pink-500/40 flex items-center gap-2 transition;
+  }
+
+  .btn-outline-purple {
+    @apply flex items-center border border-purple-500 text-purple-500 rounded-full hover:bg-purple-600 hover:text-white transition;
+  }
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

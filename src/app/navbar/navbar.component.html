@@ -1,0 +1,59 @@
+<nav
+  class="fixed top-0 left-0 w-full z-50 backdrop-blur-md border-b border-white/10 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
+  
+  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="relative flex h-16 items-center justify-between">
+
+      <!-- Left side: Logo -->
+      <div class="flex items-center">
+        <img src="Logo.png" alt="Logo" class="h-20 w-auto pt-2" />
+
+      </div>
+
+      <!-- Right side: Desktop Nav -->
+      <div class="hidden sm:flex space-x-4">
+        <a href="#" (click)="scrollTo($event, 'home')" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Home</a>
+        <a href="#" (click)="scrollTo($event, 'about')" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">About</a>
+        <a href="#" (click)="scrollTo($event, 'skills')" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Skills</a>
+        <a href="#" (click)="scrollTo($event, 'projects')" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Projects</a>
+        <a href="#" (click)="scrollTo($event, 'contact')" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Contact</a>
+      </div>
+
+
+      <!-- Mobile Menu Button (Right Side) -->
+      <div class="flex items-center sm:hidden">
+        <button
+          type="button"
+          (click)="toggleMenu()"
+          class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        >
+          <span class="sr-only">Open main menu</span>
+
+          <!-- Hamburger icon -->
+          <svg *ngIf="!isMenuOpen" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+
+          <!-- X (Close) icon -->
+          <svg *ngIf="isMenuOpen" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div *ngIf="isMenuOpen" class="sm:hidden bg-[#0b021b]/95 backdrop-blur-md border-t border-white/10">
+    <div class="space-y-1 px-2 pb-3 pt-2">
+      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-white bg-gray-950/50">Home</a>
+      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">About</a>
+      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Skills</a>
+      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Projects</a>
+      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Contact</a>
+    </div>
+  </div>
+</nav>
